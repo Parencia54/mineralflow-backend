@@ -35,3 +35,7 @@ app.get("/", (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/protected', protectedRoutes);
 app.use('/api/users', userRoutes);
+
+app.get('/test', (req, res) => {
+  res.json({ message: "Backend is live and reachable" });
+});
